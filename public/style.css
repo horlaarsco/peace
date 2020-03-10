@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  padding: 0 7rem;
+  /* max-width: 1080px; */
+  margin: 0 auto;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  /* height: 100vh; */
+}
+
+body {
+  line-height: 1.3rem;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 50%,
+    #fff 50%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+/* header img {
+  width: 50%;
+} */
+
+header ul {
+  display: flex;
+  width: 50%;
+  padding: 0;
+}
+header a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+header a:active {
+  color: black;
+}
+header li {
+  margin-left: 4rem;
+  padding-bottom: 0px;
+  border-bottom: 2px solid transparent;
+  margin-right: 0;
+}
+
+header a {
+  padding-bottom: 0px;
+}
+
+header li:hover {
+  border-bottom: 2px solid #fbc75d;
+}
+
+.bg {
+  display: flex;
+  justify-content: space-around;
+  /* background: url("./bitmap.svg"); */
+  background-size: 798px 2168px;
+  max-width: 1168px;
+  width: 80%;
+  max-height: 798px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 20px black;
+  border-radius: 2rem;
+  padding: 0 2rem;
+  box-shadow: 0 0 0 0.2em silver;
+  /* z-index: 5; */
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: Avenir;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 49px;
+}
+.bakck {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 132px);
+  margin: 2rem 0 5rem 0;
+}
+
+.half1 p {
+  opacity: 0.99;
+  color: #505050;
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 1.7rem 1.7rem 0 0;
+}
+
+h6 {
+  margin-top: 1rem;
+  line-height: 1rem;
+  height: 16px;
+  width: 368px;
+  color: #827307;
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* width:1168px; height:798px; */
+
+.half1 {
+  box-sizing: border-box;
+  width: 50%;
+  /* padding: 9rem; */
+}
+
+.biro {
+  position: absolute;
+  top: -30px;
+}
+
+.half2 {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  /* padding: 0 5rem; */
+}
+
+.contact {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-me {
+  padding: 0 3rem 0 0.5rem;
+}
+
+.contacts {
+  height: 80%;
+}
+
+.texts {
+  top: 2rem;
+  bottom: 0;
+  left: 1rem;
+  right: 0;
+  width: 110px;
+  opacity: 0.74;
+  color: #000000;
+  font-family: Chalkduster;
+  font-size: 0.85rem;
+  line-height: 23px;
+  text-align: center;
+}
+
+.sorting {
+  width: 110px;
+}
+.ux {
+  top: 4rem;
+  left: 01.4rem;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.yellow {
+  right: 0;
+  top: 5rem;
+}
+
+.yellow img,
+.pink img,
+.peach img,
+.blue img {
+  width: 80%;
+}
+.pink {
+  left: 3rem;
+  top: 3rem;
+}
+
+.peach {
+  bottom: 3rem;
+  right: 0;
+}
+
+.blue {
+  left: 2rem;
+  bottom: 6rem;
+}
+
+.design {
+  bottom: -2rem;
+  right: 0;
+}
+
+.designer {
+  height: 230px;
+  color: rgba(42, 42, 42, 0.51);
+  font-family: Avenir;
+  z-index: 10;
+}
+
+.view-project {
+  color: #212121;
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
+  padding: 0.6rem 2rem;
+  box-sizing: border-box;
+
+  border: 1px solid #202020;
+}
+
+.download-resume {
+  margin-left: 2rem;
+  color: #ffffff;
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 0.6rem 2rem;
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+.stuffs {
+  display: flex;
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 1rem;
+  opacity: 0.8;
+  color: #505050;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+.margin {
+  padding: 0.8rem 2rem;
+}
+
+@media only screen and (min-height: 800px) {
+  .half2 {
+    height: 80%;
+  }
+}
+/* 
+@media only screen and (min-width: 1310px) {
+  header li {
+    margin-left: 5rem;
+  }
+} */
+
+@media only screen and (max-width: 1270px) {
+  .contact-me {
+    padding: 0 2rem 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .pink {
+    left: 2rem;
+    top: 3.5rem;
+  }
+
+  .peach {
+    bottom: 2rem;
+    right: -2rem;
+  }
+
+  .blue {
+    left: 1rem;
+    bottom: 4rem;
+  }
+
+  .yellow {
+    right: -2rem;
+    top: 4rem;
+  }
+
+  .yellow img,
+  .pink img,
+  .peach img,
+  .blue img {
+    width: 80%;
+  }
+  .half1 p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .margin {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .half1 {
+    padding-right: 1rem;
+    padding-left: 0rem;
+  }
+
+  .texts {
+    top: 3rem;
+    font-size: 0.625rem;
+    left: 0.9rem;
+  }
+
+  .ux {
+    top: 4rem;
+  }
+
+  .download-resume,
+  .view-project {
+    padding: 0.6rem 1.5rem;
+  }
+
+  h6 {
+    width: 100%;
+  }
+
+  header li {
+    margin-left: 3rem;
+  }
+
+  .sorting {
+    width: 80px;
+    left: 2rem;
+    top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .texts {
+    top: 2.5rem;
+    font-size: 0.625rem;
+    left: 0.3rem;
+  }
+
+  .pink {
+    top: 4rem;
+  }
+
+  .yellow {
+    top: 4.5rem;
+    right: -3.5rem;
+  }
+
+  .peach {
+    bottom: 3rem;
+  }
+
+  .blue {
+    bottom: 5rem;
+  }
+  .sorting {
+    top: 2rem;
+    left: 1.5rem;
+  }
+  .pink img,
+  .peach img,
+  .blue img {
+    width: 70%;
+  }
+
+  .yellow img {
+    width: 65%;
+  }
+
+  .download-resume,
+  .view-project {
+    padding: 0.6rem 1rem;
+  }
+  .margin {
+    padding: 0.5rem 1rem;
+  }
+
+  header ul {
+    margin-left: 2rem;
+    width: 47%;
+  }
+  header li {
+    margin-left: 1.5rem;
+  }
+
+  .half1 p {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .yellow {
+    right: -5.5rem;
+  }
+
+  .peach {
+    right: -3.5rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .download-resume,
+  .view-project {
+    padding: 0.6rem 1rem;
+  }
+
+  .download-resume {
+    margin-left: 1rem;
+  }
+  header ul {
+    width: 50%;
+  }
+  header li {
+    margin-left: 1rem;
+  }
+
+  .half1 p {
+    font-size: 9px;
+  }
+}
