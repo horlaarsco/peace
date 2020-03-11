@@ -5,7 +5,7 @@ export class AboutText extends Component {
     return (
       <div className='half1'>
         <h1>About Me</h1>
-        <h6>
+        <h6 className='h6'>
           A 2 year + Product Designer, Visual/Graphic Designer and Brand
           Analyst. Born in Lagos, Nigeria.
         </h6>

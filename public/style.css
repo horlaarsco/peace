@@ -34,6 +34,7 @@ header {
   padding-top: 2rem;
   align-items: center;
   padding-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 /* header img {
@@ -108,11 +109,13 @@ h1 {
   font-size: 13px;
   font-weight: 500;
   line-height: 20px;
-  margin: 1.7rem 1.7rem 0 0;
+  margin: 1rem 1.7rem 0 0;
 }
-
+.h6 {
+  margin-bottom: 1.3rem;
+}
 h6 {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   line-height: 1rem;
   height: 16px;
   width: 368px;
@@ -143,6 +146,7 @@ h6 {
 }
 
 .contact {
+  height: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -320,12 +324,6 @@ textarea {
     top: 4rem;
   }
 
-  .yellow img,
-  .pink img,
-  .peach img,
-  .blue img {
-    width: 80%;
-  }
   .half1 p {
     font-size: 12px;
     line-height: 16px;
@@ -367,13 +365,25 @@ textarea {
     left: 2rem;
     top: 2rem;
   }
+  .App {
+    width: 80%;
+    padding: 0;
+  }
+  .bakck {
+    height: calc(100vh - 170px);
+    margin: 3rem 0 5rem 0;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-  .texts {
+  /* .texts {
     top: 2.5rem;
     font-size: 0.625rem;
     left: 0.3rem;
+  } */
+
+  .bakck {
+    height: calc(100vh - 140px);
   }
 
   .pink {
@@ -391,19 +401,6 @@ textarea {
 
   .blue {
     bottom: 5rem;
-  }
-  .sorting {
-    top: 2rem;
-    left: 1.5rem;
-  }
-  .pink img,
-  .peach img,
-  .blue img {
-    width: 70%;
-  }
-
-  .yellow img {
-    width: 65%;
   }
 
   .download-resume,
@@ -423,7 +420,12 @@ textarea {
   }
 
   .half1 p {
-    font-size: 11px;
+    font-size: 10px;
+  }
+
+  .App {
+    width: 90%;
+    padding: 0;
   }
 }
 
@@ -434,6 +436,35 @@ textarea {
 
   .peach {
     right: -3.5rem;
+  }
+
+  .half1 p {
+    font-size: 9.5px;
+  }
+
+  .pink img,
+  .peach img,
+  .blue img {
+    width: 70%;
+  }
+
+  .yellow img {
+    width: 65%;
+  }
+
+  .texts {
+    top: 2.5rem;
+    font-size: 0.625rem;
+    left: 0.3rem;
+  }
+  .sorting {
+    top: 2rem;
+    left: 1.5rem;
+  }
+
+  .bakck {
+    height: calc(100vh - 150px);
+    margin: 4rem 0;
   }
 }
 
@@ -455,5 +486,16 @@ textarea {
 
   .half1 p {
     font-size: 9px;
+  }
+
+  .bakck {
+    height: calc(100vh - 200px);
+    margin: 4rem 0;
+  }
+}
+@media only screen and (max-height: 850px) {
+  .bakck {
+    height: calc(100vh - 150px);
+    margin: 4rem 0;
   }
 }
