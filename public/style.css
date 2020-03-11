@@ -45,6 +45,7 @@ header ul {
   display: flex;
   width: 50%;
   padding: 0;
+  justify-content: space-between;
 }
 header a {
   color: #4c4c4c;
