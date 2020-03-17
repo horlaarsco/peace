@@ -7,7 +7,22 @@ export class Header extends Component {
       <div>
         <header>
           <img src='./logo.svg' alt='logo' />
-          <ul>
+          <ul className='deskheader'>
+            <li>
+              <Link to={"/"}> Home </Link>
+            </li>
+            <li>
+              <Link to={"/about"}> About Me</Link>
+            </li>
+            <li>
+              <Link to={"/projects"}> Projects</Link>
+            </li>
+            <li>
+              <Link to={"/contact"}> Contact Me</Link>
+            </li>
+          </ul>
+
+          <ul className='mobheader'>
             <li>
               <Link to={"/"}> Home </Link>
             </li>

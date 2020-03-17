@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export class Skills extends Component {
   render() {
     return (
-      <div className='half2 pos-rel'>
+      <div className='half2 pos-rel ' id='cardss'>
         <div className='pos-abs yellow'>
           <img className='pos-rel ' src='./Bitmap-1.svg' alt='' />
           <p className='texts pos-abs ux'>UX Research</p>

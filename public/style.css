@@ -221,6 +221,14 @@ h6 {
   right: 0;
 }
 
+#peace {
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0px;
+  height: 80%;
+}
+
 .designer {
   height: 230px;
   color: rgba(42, 42, 42, 0.51);
@@ -240,6 +248,9 @@ h6 {
   border: 1px solid #202020;
 }
 
+.mobheader {
+  display: none;
+}
 .download-resume {
   margin-left: 2rem;
   color: #ffffff;
@@ -372,7 +383,7 @@ textarea {
   }
   .bakck {
     height: calc(100vh - 170px);
-    margin: 3rem 0 5rem 0;
+    /* margin: 3rem 0 5rem 0; */
   }
 }
 
@@ -465,7 +476,7 @@ textarea {
 
   .bakck {
     height: calc(100vh - 150px);
-    margin: 4rem 0;
+    /* margin: 4rem 0; */
   }
 }
 
@@ -491,12 +502,131 @@ textarea {
 
   .bakck {
     height: calc(100vh - 200px);
-    margin: 4rem 0;
+    /* margin: 4rem 0; */
   }
 }
 @media only screen and (max-height: 850px) {
   .bakck {
     height: calc(100vh - 150px);
-    margin: 4rem 0;
+    /* margin: 4rem 0; */
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .App {
+    width: 93%;
+  }
+
+  .bg {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .bakck {
+    height: 100%;
+  }
+
+  body {
+    background: none;
+    overflow: scroll;
+  }
+  .App {
+    background: none;
+  }
+  .biro,
+  .deskheader {
+    display: none;
+  }
+
+  .mobheader {
+    display: block;
+  }
+
+  .bg {
+    flex-direction: column-reverse;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .half1 {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  .half2 {
+    height: 45vh;
+    width: 100%;
+  }
+
+  .pink {
+    top: 0;
+    left: 0;
+  }
+
+  .yellow {
+    top: 0;
+    right: -2rem;
+  }
+  .blue {
+    left: 0;
+    bottom: 0;
+  }
+
+  .peach {
+    bottom: 0;
+    right: -2rem;
+  }
+
+  #peace {
+    display: block;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .pink img,
+  .peach img,
+  .blue img {
+    width: 90%;
+  }
+
+  .yellow img {
+    width: 75%;
+  }
+
+  #cardss {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #cardss {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #cardss {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .bg {
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .pink img,
+  .peach img,
+  .blue img {
+    width: 80%;
+  }
+
+  .yellow img {
+    width: 70%;
   }
 }
