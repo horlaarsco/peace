@@ -5,10 +5,10 @@ import Skills from "./Skills";
 export class Background extends Component {
   render() {
     return (
-      <>
+      <div id='bg' className='bg'>
         <Details />
         <Skills />
-      </>
+      </div>
     );
   }
 }

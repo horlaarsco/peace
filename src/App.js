@@ -14,7 +14,7 @@ function App() {
         <Header />
         <div className='bakck'>
           <img className='biro' src='./biro.svg' alt='' />
-          <div className='bg'>
+          <>
             <Switch>
               <Route path='/' exact>
                 <Background />
@@ -26,7 +26,7 @@ function App() {
                 <Contact />
               </Route>
             </Switch>
-          </div>
+          </>
 
           <div className='design pos-abs'>
             <img src='./designer.svg' className='designer' alt='' />

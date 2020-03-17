@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export class Contact extends Component {
   render() {
     return (
-      <>
+      <div className='bg'>
         <div className='half1 contact-me'>
           <h1>Contact Me</h1>
           <p style={p}>
@@ -36,7 +36,7 @@ export class Contact extends Component {
         <div className='half2 contacts'>
           <img className='contact' src='./contaccct.svg' alt='' />
         </div>
-      </>
+      </div>
     );
   }
 }

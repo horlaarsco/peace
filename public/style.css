@@ -248,7 +248,8 @@ h6 {
   border: 1px solid #202020;
 }
 
-.mobheader {
+.mobheader,
+.ham {
   display: none;
 }
 .download-resume {
@@ -539,8 +540,23 @@ textarea {
     display: none;
   }
 
-  .mobheader {
+  .ham {
     display: block;
+    border: solid black 2px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20%;
+  }
+
+  .mobheader {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+
+  .mobheader li {
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
   .bg {
@@ -549,11 +565,14 @@ textarea {
     box-shadow: none;
   }
 
+  #bg {
+    flex-direction: column;
+  }
+
   .half1 {
     width: 100%;
     padding: 0;
-    margin-top: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .half2 {
@@ -618,8 +637,7 @@ textarea {
   .bg {
     padding: 0 0.5rem;
   }
-}
-@media only screen and (max-width: 450px) {
+
   .pink img,
   .peach img,
   .blue img {
@@ -628,5 +646,20 @@ textarea {
 
   .yellow img {
     width: 70%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .pink img,
+  .peach img,
+  .blue img {
+    width: 70%;
+  }
+  .bg {
+    padding: 0;
+  }
+
+  .yellow img {
+    width: 60%;
   }
 }
