@@ -25,16 +25,28 @@ export class Header extends Component {
         </header>
         <ul id='navv' className='mobheader'>
           <li>
-            <Link to={"/"}> Home </Link>
+            <Link to={"/"} onClick={myFunction}>
+              {" "}
+              Home{" "}
+            </Link>
           </li>
           <li>
-            <Link to={"/about"}> About Me</Link>
+            <Link to={"/about"} onClick={myFunction}>
+              {" "}
+              About Me
+            </Link>
           </li>
           <li>
-            <Link to={"/projects"}> Projects</Link>
+            <Link to={"/projects"} onClick={myFunction}>
+              {" "}
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to={"/contact"}> Contact Me</Link>
+            <Link to={"/contact"} onClick={myFunction}>
+              {" "}
+              Contact Me
+            </Link>
           </li>
         </ul>
       </div>
