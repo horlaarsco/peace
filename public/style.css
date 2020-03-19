@@ -578,6 +578,7 @@ textarea {
     flex-direction: column-reverse;
     border: 0;
     box-shadow: none;
+    max-height: 100%;
   }
 
   #bg {
