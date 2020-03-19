@@ -524,8 +524,23 @@ textarea {
 }
 
 @media only screen and (max-width: 700px) {
+  .design {
+    z-index: -1;
+  }
+  .half1 {
+    margin-bottom: 4rem;
+  }
   .bakck {
     height: 100%;
+  }
+
+  .texts {
+    top: 3rem;
+    left: 1.1rem;
+  }
+  .sorting {
+    left: 2.6rem;
+    top: 3rem;
   }
 
   body {
