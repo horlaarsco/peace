@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Background from "./components/Background";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
               </Route>
               <Route path='/contact'>
                 <Contact />
+              </Route>
+              <Route path='/projects'>
+                <Projects />
               </Route>
             </Switch>
           </>

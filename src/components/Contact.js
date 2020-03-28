@@ -45,10 +45,10 @@ export default Contact;
 
 let p = {
   color: "#827307",
-  "margin-right": "0",
-  "margin-top": ".5rem"
+  marginRight: "0",
+  marginTop: ".5rem"
 };
 
 let styles = {
-  "justify-content": "space-between"
+  justifyContent: "space-between"
 };
