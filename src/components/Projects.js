@@ -45,12 +45,26 @@ const HALF2 = styled.div`
   align-items: center;
 `;
 
+
+let grey = {}
+
+ 
+
+
 function Projects() {
   const [images, setlistimages] = useState([]);
 
-  const projects = ProjectsFile.map((item, index) => (
-    <div key={index}>
-      <H5 onClick={() => setlistimages(item.pictures)}>{item.name}</H5>
+
+
+if(images.length>1){
+  grey = {background:"#f2f2f2"}
+
+ }
+  
+
+  const projects = ProjectsFile.map((item) => (
+    <div style={grey} key={item.key}>
+      <H5  onClick={() => setlistimages(item.pictures)}>{item.name}</H5>
       <DETAILS style={{ margin: ".4rem 0 1rem 0" }}>
         View More Details
         <img src='./left-arrow.svg' style={{ marginLeft: ".3rem" }} alt='' />

@@ -4,11 +4,12 @@ import CarouselComponent from "../components/CarouselComponent";
 import CarouselComponentBig from "../components/CarouselComponentBig";
 
 const MODALCONTENT = styled.div`
-  background: #f2f2f2;
+  background: transparent;
+    border: none;
   margin: auto;
   padding: 5px;
-  border: 1px solid #888;
   width: 80%;
+
 `;
 
 const DIV = styled.div`
@@ -35,6 +36,7 @@ const CLOSE = styled.span`
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 `;
 
 function Carousel({ images }) {
