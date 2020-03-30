@@ -53,18 +53,22 @@ let grey = {}
 
 function Projects() {
   const [images, setlistimages] = useState([]);
+  const [activeProject, setActiveProject] = useState(1)
+  
+  function setCurrentProject(currentImages, currentProject) {
+    setlistimages(currentImages)
+    setActiveProject(currentProject)
+  }
 
 
-
-if(images.length>1){
-  grey = {background:"#f2f2f2"}
-
- }
+  if(images.length>1){
+    grey = {background:"#f2f2f2"}
+  }
   
 
   const projects = ProjectsFile.map((item) => (
-    <div style={grey} key={item.key}>
-      <H5  onClick={() => setlistimages(item.pictures)}>{item.name}</H5>
+    <div style={item.key === activeProject ? grey : {}} key={item.key}>
+      <H5 onClick={() => setCurrentProject(item.pictures, item.key)}>{item.name}</H5>
       <DETAILS style={{ margin: ".4rem 0 1rem 0" }}>
         View More Details
         <img src='./left-arrow.svg' style={{ marginLeft: ".3rem" }} alt='' />
