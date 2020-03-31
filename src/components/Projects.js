@@ -45,32 +45,31 @@ const HALF2 = styled.div`
   align-items: center;
 `;
 
-let grey = {};
+
+let grey = {}
+
+ 
+
 
 function Projects() {
   const [images, setlistimages] = useState([]);
-  const [activeProject, setActiveProject] = useState(1);
-
+  const [activeProject, setActiveProject] = useState(1)
+  
   function setCurrentProject(currentImages, currentProject) {
-    setlistimages(currentImages);
-    setActiveProject(currentProject);
+    setlistimages(currentImages)
+    setActiveProject(currentProject)
   }
 
-  if (images.length > 1) {
-    grey = { background: "#f2f2f2", padding: "2px 2px 2px 2rem" };
-  }
 
-  const projects = ProjectsFile.map(item => (
-    <div
-      style={
-        item.key === activeProject ? grey : { padding: "2px 2px 2px 2rem" }
-      }
-      key={item.key}
-    >
-      <H5 onClick={() => setCurrentProject(item.pictures, item.key)}>
-        {item.name}
-      </H5>
-      <DETAILS style={{ margin: "6px 0 0 0" }}>
+  if(images.length>1){
+    grey = {background:"#f2f2f2"}
+  }
+  
+
+  const projects = ProjectsFile.map((item) => (
+    <div style={item.key === activeProject ? grey : {}} key={item.key}>
+      <H5 onClick={() => setCurrentProject(item.pictures, item.key)}>{item.name}</H5>
+      <DETAILS style={{ margin: ".4rem 0 1rem 0" }}>
         View More Details
         <img src='./left-arrow.svg' style={{ marginLeft: ".3rem" }} alt='' />
       </DETAILS>
@@ -79,15 +78,13 @@ function Projects() {
 
   return (
     <div
-      style={{ paddingTop: ".5rem", paddingRight: "0", paddingLeft: "0" }}
+      style={{ paddingTop: ".5rem", paddingRight: "0" }}
       id='bg'
       className='bg'
     >
       <div className='half1'>
-        <h1 style={{ paddingLeft: "2rem" }}>Project</h1>
-        <H6 style={{ paddingLeft: "2rem" }}>
-          View each projects with documentations.
-        </H6>
+        <h1>Project</h1>
+        <H6>View each projects with documentations.</H6>
 
         <SCROLL>{projects}</SCROLL>
       </div>
