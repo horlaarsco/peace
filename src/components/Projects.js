@@ -49,23 +49,13 @@ let grey = {};
 
 function Projects() {
   const [images, setlistimages] = useState([]);
-<<<<<<< HEAD
   const [activeProject, setActiveProject] = useState(1);
-=======
-  const [activeProject, setActiveProject] = useState(1)
-  
-  function setCurrentProject(currentImages, currentProject) {
-    setlistimages(currentImages)
-    setActiveProject(currentProject)
-  }
->>>>>>> d90dc7fa9da082d1897a62e3e494f80fe98a9e62
 
   function setCurrentProject(currentImages, currentProject) {
     setlistimages(currentImages);
     setActiveProject(currentProject);
   }
 
-<<<<<<< HEAD
   if (images.length > 1) {
     grey = { background: "#f2f2f2", padding: "2px 2px 2px 2rem" };
   }
@@ -81,17 +71,6 @@ function Projects() {
         {item.name}
       </H5>
       <DETAILS style={{ margin: "6px 0 0 0" }}>
-=======
-  if(images.length>1){
-    grey = {background:"#f2f2f2"}
-  }
-  
-
-  const projects = ProjectsFile.map((item) => (
-    <div style={item.key === activeProject ? grey : {}} key={item.key}>
-      <H5 onClick={() => setCurrentProject(item.pictures, item.key)}>{item.name}</H5>
-      <DETAILS style={{ margin: ".4rem 0 1rem 0" }}>
->>>>>>> d90dc7fa9da082d1897a62e3e494f80fe98a9e62
         View More Details
         <img src='./left-arrow.svg' style={{ marginLeft: ".3rem" }} alt='' />
       </DETAILS>
