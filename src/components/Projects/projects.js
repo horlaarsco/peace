@@ -17,7 +17,7 @@ const projects = [
   {
     key: "oddla",
     name: "Kliqr Categorizer",
-    pictures: ["kilqr/1.png", "kilqr/2.png", "kilqr/2.png"]
+    pictures: ["/1.png", "kilqr/2.png", "kilqr/2.png"]
   },
   {
     key: "anffan",
