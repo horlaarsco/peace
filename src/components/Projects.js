@@ -39,6 +39,10 @@ const SCROLL = styled.div`
   max-height: 40vh;
 `;
 
+const MDIV = styled.div`
+  margin-top: 1rem;
+`;
+
 const HALF2 = styled.div`
   height: 100%;
   display: flex;
@@ -50,10 +54,18 @@ let grey = {};
 function Projects() {
   const [images, setlistimages] = useState([]);
   const [activeProject, setActiveProject] = useState(1);
+  const [visibility, setVisibility] = useState(true);
+  const [mvisibility, msetVisibility] = useState(true);
 
   function setCurrentProject(currentImages, currentProject) {
     setlistimages(currentImages);
     setActiveProject(currentProject);
+  }
+
+  function setCurrentProjectm(currentImages, currentProject) {
+    setlistimages(currentImages);
+    setActiveProject(currentProject);
+    msetVisibility(false);
   }
 
   if (images.length > 1) {
@@ -77,6 +89,23 @@ function Projects() {
     </div>
   ));
 
+  const projectM = ProjectsFile.map(item => (
+    <div
+      style={
+        item.key === activeProject ? grey : { padding: "2px 2px 2px 2rem" }
+      }
+      key={item.key}
+    >
+      <H5 onClick={() => setCurrentProjectm(item.pictures, item.key)}>
+        {item.name}
+      </H5>
+      <DETAILS style={{ margin: "6px 0 0 0" }}>
+        View More Details
+        <img src='./left-arrow.svg' style={{ marginLeft: ".3rem" }} alt='' />
+      </DETAILS>
+    </div>
+  ));
+
   return (
     <div
       style={{ paddingTop: ".5rem", paddingRight: "0", paddingLeft: "0" }}
@@ -89,10 +118,17 @@ function Projects() {
           View each projects with documentations.
         </H6>
 
-        <SCROLL>{projects}</SCROLL>
+        <SCROLL id='desktop'>{projects} </SCROLL>
+        <MDIV id='mobile'>{projectM}</MDIV>
       </div>
-      <HALF2 className='half2'>
-        <Carousel images={images} />
+      <HALF2 className='half2 '>
+        <Carousel
+          images={images}
+          setVisibility={setVisibility}
+          visibility={visibility}
+          msetVisibility={msetVisibility}
+          mvisibility={mvisibility}
+        />
       </HALF2>
     </div>
   );

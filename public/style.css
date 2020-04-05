@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .App {
   padding: 0 7rem;
   /* max-width: 1080px; */
@@ -13,14 +14,12 @@
 body {
   line-height: 1.3rem;
   height: 100vh;
-  background: linear-gradient(
-    to right,
-    white 0%,
-    white 50%,
-    #fff 50%,
-    rgba(0, 0, 0, 0.05) 50%,
-    rgba(0, 0, 0, 0.05) 100%
-  );
+  background: linear-gradient(to right,
+      white 0%,
+      white 50%,
+      #fff 50%,
+      rgba(0, 0, 0, 0.05) 50%,
+      rgba(0, 0, 0, 0.05) 100%);
   overflow: hidden;
 }
 
@@ -47,6 +46,7 @@ header ul {
   padding: 0;
   justify-content: space-between;
 }
+
 header a {
   color: #4c4c4c;
   text-decoration: none;
@@ -55,6 +55,7 @@ header a {
 header a:active {
   color: black;
 }
+
 header li {
   margin-left: 4rem;
   padding-bottom: 0px;
@@ -95,6 +96,7 @@ h1 {
   font-weight: 900;
   line-height: 49px;
 }
+
 .bakck {
   position: relative;
   display: flex;
@@ -112,9 +114,11 @@ h1 {
   line-height: 20px;
   margin: 1rem 1.7rem 0 0;
 }
+
 .h6 {
   margin-bottom: 1.3rem;
 }
+
 h6 {
   margin-top: 0.3rem;
   line-height: 1rem;
@@ -177,6 +181,7 @@ h6 {
 .sorting {
   width: 110px;
 }
+
 .ux {
   top: 4rem;
   left: 01.4rem;
@@ -201,6 +206,7 @@ h6 {
 .blue img {
   width: 80%;
 }
+
 .pink {
   left: 3rem;
   top: 3rem;
@@ -252,6 +258,7 @@ h6 {
 .ham {
   display: none;
 }
+
 .download-resume {
   margin-left: 2rem;
   color: #ffffff;
@@ -266,6 +273,11 @@ h6 {
 a {
   text-decoration: none;
 }
+
+#mobile {
+  display: none;
+}
+
 .stuffs {
   display: flex;
   margin-top: 1rem;
@@ -321,6 +333,7 @@ textarea {
     height: 80%;
   }
 }
+
 /* 
 @media only screen and (min-width: 1310px) {
   header li {
@@ -359,6 +372,7 @@ textarea {
     font-size: 12px;
     line-height: 16px;
   }
+
   .margin {
     padding: 0.5rem 1.5rem;
   }
@@ -396,10 +410,12 @@ textarea {
     left: 2rem;
     top: 2rem;
   }
+
   .App {
     width: 80%;
     padding: 0;
   }
+
   .bakck {
     height: calc(100vh - 170px);
     /* margin: 3rem 0 5rem 0; */
@@ -438,6 +454,7 @@ textarea {
   .view-project {
     padding: 0.6rem 1rem;
   }
+
   .margin {
     padding: 0.5rem 1rem;
   }
@@ -446,6 +463,7 @@ textarea {
     margin-left: 2rem;
     width: 47%;
   }
+
   header li {
     margin-left: 1.5rem;
   }
@@ -488,6 +506,7 @@ textarea {
     font-size: 0.625rem;
     left: 0.3rem;
   }
+
   .sorting {
     top: 2rem;
     left: 1.5rem;
@@ -500,6 +519,7 @@ textarea {
 }
 
 @media only screen and (max-width: 950px) {
+
   .download-resume,
   .view-project {
     padding: 0.6rem 1rem;
@@ -508,9 +528,11 @@ textarea {
   .download-resume {
     margin-left: 1rem;
   }
+
   header ul {
     width: 50%;
   }
+
   header li {
     margin-left: 1rem;
   }
@@ -524,6 +546,7 @@ textarea {
     /* margin: 4rem 0; */
   }
 }
+
 @media only screen and (max-height: 850px) {
   .bakck {
     height: calc(100vh - 150px);
@@ -542,12 +565,23 @@ textarea {
 }
 
 @media only screen and (max-width: 700px) {
+
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
   .design {
     z-index: -1;
   }
+
   .half1 {
     margin-bottom: 4rem;
   }
+
   .bakck {
     height: 100%;
   }
@@ -556,6 +590,7 @@ textarea {
     top: 3rem;
     left: 1.1rem;
   }
+
   .sorting {
     left: 2.6rem;
     top: 3rem;
@@ -565,9 +600,11 @@ textarea {
     background: none;
     overflow: scroll;
   }
+
   .App {
     background: none;
   }
+
   .biro,
   .deskheader {
     display: none;
@@ -623,6 +660,7 @@ textarea {
     top: 0;
     right: -2rem;
   }
+
   .blue {
     left: 0;
     bottom: 0;
@@ -684,11 +722,13 @@ textarea {
 }
 
 @media only screen and (max-width: 350px) {
+
   .pink img,
   .peach img,
   .blue img {
     width: 70%;
   }
+
   .bg {
     padding: 0;
   }

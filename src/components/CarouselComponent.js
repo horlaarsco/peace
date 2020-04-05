@@ -13,7 +13,7 @@ const DIV = styled.div`
 
 function CarouselComponent({ setVisibility, images }) {
   let PHOTOS = images.map((item, index) => (
-    <DIV key={index}>
+    <DIV id='desktop' key={index}>
       <IMG src={item} height='350px' />
     </DIV>
   ));

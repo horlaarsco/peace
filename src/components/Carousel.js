@@ -5,11 +5,10 @@ import CarouselComponentBig from "../components/CarouselComponentBig";
 
 const MODALCONTENT = styled.div`
   background: transparent;
-    border: none;
+  border: none;
   margin: auto;
   padding: 5px;
   width: 80%;
-
 `;
 
 const DIV = styled.div`
@@ -39,25 +38,38 @@ const CLOSE = styled.span`
   cursor: pointer;
 `;
 
-function Carousel({ images }) {
-  const [visibility, setVisibility] = useState(true);
-
+function Carousel({
+  images,
+  visibility,
+  setVisibility,
+  mvisibility,
+  msetVisibility
+}) {
   return (
-    <div>
-      <CarouselComponent images={images} setVisibility={setVisibility} />
-
-      <MODAL
-        style={visibility ? { display: "none" } : { display: "block" }}
-        id='myModal'
-      >
-        <DIV>
-          <MODALCONTENT>
-            <CLOSE onClick={() => setVisibility(true)}>&times;</CLOSE>
-            <CarouselComponentBig images={images} />
-          </MODALCONTENT>
-        </DIV>
-      </MODAL>
-    </div>
+    <>
+      <div id='mobile'>
+        <CarouselComponent images={images} setVisibility={setVisibility} />
+        <MODAL style={mvisibility ? { display: "none" } : { display: "block" }}>
+          <DIV>
+            <MODALCONTENT>
+              <CLOSE onClick={() => msetVisibility(true)}>&times;</CLOSE>
+              <CarouselComponentBig images={images} />
+            </MODALCONTENT>
+          </DIV>
+        </MODAL>
+      </div>
+      <div id='desktop'>
+        <CarouselComponent images={images} setVisibility={setVisibility} />
+        <MODAL style={visibility ? { display: "none" } : { display: "block" }}>
+          <DIV>
+            <MODALCONTENT>
+              <CLOSE onClick={() => setVisibility(true)}>&times;</CLOSE>
+              <CarouselComponentBig images={images} />
+            </MODALCONTENT>
+          </DIV>
+        </MODAL>
+      </div>
+    </>
   );
 }
 
