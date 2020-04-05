@@ -5,8 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const IMG = styled.img`
   background: #f2f2f2;
-  /* height: 90vh; */
-  height: 100%;
+  height: 90vh;
   width: auto;
 `;
 
@@ -15,11 +14,28 @@ const DIV = styled.div`
   background: transparent;
 `;
 
+const MIMG = styled.img`
+  background: #f2f2f2;
+  /* height: 90vh; */
+  height: 100%;
+  width: auto;
+`;
+
+const MDIV = styled.div`
+  height: 100%;
+  background: transparent;
+`;
+
 function CarouselComponent({ images }) {
   let PHOTOS = images.map((item, index) => (
-    <DIV key={index}>
-      <IMG src={item} />
-    </DIV>
+    <>
+      <DIV id='desktop' key={index}>
+        <IMG src={item} />
+      </DIV>
+      <MDIV id='mobile' key={index}>
+        <MIMG src={item} />
+      </MDIV>
+    </>
   ));
   return (
     <Carousel
