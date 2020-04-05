@@ -15,6 +15,19 @@ const MODALCONTENT = styled.div`
   flex-direction: column;
 `;
 
+const MMODALCONTENT = styled.div`
+  background: transparent;
+  border: none;
+  margin-top: 10%;
+  padding: 5px;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const DIV = styled.div`
   display: flex;
   justify-content: center;
@@ -40,7 +53,7 @@ const MMODAL = styled.div`
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
@@ -76,14 +89,14 @@ function Carousel({
           style={mvisibility ? { display: "none" } : { display: "block" }}
         >
           <DIV>
-            <MODALCONTENT>
-              <div>
+            <MMODALCONTENT>
+              <div className='modalRe' style={{ height: "95%" }}>
                 <CLOSE onClick={() => msetVisibility(true)}>&times;</CLOSE>
                 <CarouselComponentBig images={images} />
               </div>
 
               <BUTTON>View More Details</BUTTON>
-            </MODALCONTENT>
+            </MMODALCONTENT>
           </DIV>
         </MMODAL>
       </div>

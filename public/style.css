@@ -302,6 +302,24 @@ textarea {
   margin-top: 1rem;
 }
 
+.modalRe>div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+
+
+}
+
+/* .modalRe {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+} */
+
 textarea {
   height: 100px;
 }
@@ -547,6 +565,7 @@ textarea {
   }
 }
 
+
 @media only screen and (max-height: 850px) {
   .bakck {
     height: calc(100vh - 150px);
@@ -565,6 +584,12 @@ textarea {
 }
 
 @media only screen and (max-width: 700px) {
+
+
+  /* body {
+
+    overflow: scroll;
+  } */
 
   #desktop {
     display: none;

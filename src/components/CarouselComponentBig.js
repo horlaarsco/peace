@@ -5,11 +5,13 @@ import { Carousel } from "react-responsive-carousel";
 
 const IMG = styled.img`
   background: #f2f2f2;
-  height: 90vh;
+  /* height: 90vh; */
+  height: 100%;
   width: auto;
 `;
 
 const DIV = styled.div`
+  height: 80%;
   background: transparent;
 `;
 
