@@ -9,6 +9,10 @@ const MODALCONTENT = styled.div`
   margin: auto;
   padding: 5px;
   width: 80%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const DIV = styled.div`
@@ -38,6 +42,13 @@ const CLOSE = styled.span`
   cursor: pointer;
 `;
 
+const BUTTON = styled.button`
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  background: transparent;
+`;
+
 function Carousel({
   images,
   visibility,
@@ -52,8 +63,12 @@ function Carousel({
         <MODAL style={mvisibility ? { display: "none" } : { display: "block" }}>
           <DIV>
             <MODALCONTENT>
-              <CLOSE onClick={() => msetVisibility(true)}>&times;</CLOSE>
-              <CarouselComponentBig images={images} />
+              <div>
+                <CLOSE onClick={() => msetVisibility(true)}>&times;</CLOSE>
+                <CarouselComponentBig images={images} />
+              </div>
+
+              <BUTTON>View More Details</BUTTON>
             </MODALCONTENT>
           </DIV>
         </MODAL>
