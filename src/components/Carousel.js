@@ -34,6 +34,18 @@ const MODAL = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
 `;
 
+const MMODAL = styled.div`
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+`;
+
 const CLOSE = styled.span`
   color: #aaaaaa;
   float: right;
@@ -60,7 +72,9 @@ function Carousel({
     <>
       <div id='mobile'>
         <CarouselComponent images={images} setVisibility={setVisibility} />
-        <MODAL style={mvisibility ? { display: "none" } : { display: "block" }}>
+        <MMODAL
+          style={mvisibility ? { display: "none" } : { display: "block" }}
+        >
           <DIV>
             <MODALCONTENT>
               <div>
@@ -71,7 +85,7 @@ function Carousel({
               <BUTTON>View More Details</BUTTON>
             </MODALCONTENT>
           </DIV>
-        </MODAL>
+        </MMODAL>
       </div>
       <div id='desktop'>
         <CarouselComponent images={images} setVisibility={setVisibility} />
