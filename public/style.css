@@ -227,13 +227,14 @@ h6 {
   right: 0;
 }
 
+
 #peace {
-  z-index: -1;
+
+  /* z-index: -1;
   position: absolute;
   overflow: hidden;
-  bottom: 0px;
-  height: 80%;
-  border-radius: 50%;
+  bottom: 0px; */
+  width: 100%;
 
 }
 
@@ -351,6 +352,12 @@ textarea {
 @media only screen and (min-height: 800px) {
   .half2 {
     height: 80%;
+  }
+}
+
+@media only screen and (max-height: 1000px) {
+  #peace {
+    height: 90%;
   }
 }
 
@@ -568,6 +575,7 @@ textarea {
 }
 
 
+
 @media only screen and (max-height: 850px) {
   .bakck {
     height: calc(100vh - 150px);
@@ -698,12 +706,12 @@ textarea {
     right: -2rem;
   }
 
-  #peace {
+  /* #peace {
     display: block;
     position: relative;
     height: 100%;
     margin: 0 auto;
-  }
+  } */
 
   .pink img,
   .peach img,
