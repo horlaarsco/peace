@@ -1,59 +1,91 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-export class Header extends Component {
-  render() {
-    return (
-      <div>
-        <header>
-          <Link to={"/"}>
-            <img src='./logo.svg' alt='logo' />
-          </Link>
-          <ul className='deskheader'>
-            <li>
-              <Link to={"/"}> Home </Link>
-            </li>
-            <li>
-              <Link to={"/about"}> About Me</Link>
-            </li>
-            <li>
-              <Link to={"/projects"}> Projects</Link>
-            </li>
-            <li>
-              <Link to={"/contact"}> Contact Me</Link>
-            </li>
-          </ul>
-          <img className='ham' src='./ham.svg' alt='' onClick={myFunction} />{" "}
-        </header>
-        <ul id='navv' className='mobheader'>
+function Header() {
+  let location = useLocation();
+
+  const styleabout = {
+    marginRight: 10,
+    borderBottom: location.pathname === "/about" && "2px solid #fbc75d"
+  };
+
+  const stylehome = {
+    marginRight: 10,
+    borderBottom: location.pathname === "/" && "2px solid #fbc75d"
+  };
+
+  const styleprojects = {
+    marginRight: 10,
+    borderBottom: location.pathname === "/projects" && "2px solid #fbc75d"
+  };
+
+  const stylecontact = {
+    marginRight: 10,
+    borderBottom: location.pathname === "/contact" && "2px solid #fbc75d"
+  };
+
+  return (
+    <div>
+      <header>
+        <Link to={"/"}>
+          <img src='./logo.svg' alt='logo' />
+        </Link>
+        <ul className='deskheader'>
           <li>
-            <Link to={"/"} onClick={myFunction}>
+            <Link style={stylehome} to={"/"}>
               {" "}
               Home{" "}
             </Link>
           </li>
           <li>
-            <Link to={"/about"} onClick={myFunction}>
+            <Link style={styleabout} to={"/about"}>
               {" "}
               About Me
             </Link>
           </li>
           <li>
-            <Link to={"/projects"} onClick={myFunction}>
+            <Link style={styleprojects} to={"/projects"}>
               {" "}
               Projects
             </Link>
           </li>
           <li>
-            <Link to={"/contact"} onClick={myFunction}>
+            <Link style={stylecontact} to={"/contact"}>
               {" "}
               Contact Me
             </Link>
           </li>
         </ul>
-      </div>
-    );
-  }
+        <img className='ham' src='./ham.svg' alt='' onClick={myFunction} />{" "}
+      </header>
+      <ul id='navv' className='mobheader'>
+        <li>
+          <Link to={"/"} onClick={myFunction}>
+            {" "}
+            Home{" "}
+          </Link>
+        </li>
+        <li>
+          <Link to={"/about"} onClick={myFunction}>
+            {" "}
+            About Me
+          </Link>
+        </li>
+        <li>
+          <Link to={"/projects"} onClick={myFunction}>
+            {" "}
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to={"/contact"} onClick={myFunction}>
+            {" "}
+            Contact Me
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 export default Header;

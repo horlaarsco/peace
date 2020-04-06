@@ -67,9 +67,9 @@ header a {
   padding-bottom: 0px;
 }
 
-header li:hover {
+/* header li:hover {
   border-bottom: 2px solid #fbc75d;
-}
+} */
 
 .bg {
   display: flex;
@@ -706,12 +706,13 @@ textarea {
     right: -2rem;
   }
 
-  /* #peace {
-    display: block;
-    position: relative;
-    height: 100%;
+  #peace {
+    /* display: block;
+    position: relative; */
+    /* height: 100%; */
+    border-radius: 50%;
     margin: 0 auto;
-  } */
+  }
 
   .pink img,
   .peach img,
