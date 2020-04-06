@@ -233,6 +233,8 @@ h6 {
   overflow: hidden;
   bottom: 0px;
   height: 80%;
+  border-radius: 50%;
+
 }
 
 .designer {
