@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class Contact extends Component {
   render() {
@@ -17,20 +18,16 @@ export class Contact extends Component {
               placeholder='Email or Mobile Number
 '
             />
-            <textarea
-              name='message'
-              id='message'
-              cols='30'
-              rows='10'
-            ></textarea>
+            <textarea name='message' id='message' cols='30' rows='10' />
           </form>
           <div className='stuffs' style={styles}>
-            <a className='view-project margin' href=''>
+            <a className='view-project margin' href='/'>
               Send Message
             </a>
-            <a href='' className='download-resume margin'>
-              View Project
-            </a>
+
+            <Link className='download-resume margin' to={"/projects"}>
+              View Projects
+            </Link>
           </div>
         </div>
         <div className='half2 contacts'>

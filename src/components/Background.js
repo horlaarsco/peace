@@ -1,13 +1,15 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import Details from "./Details";
-import Skills from "./Skills";
+const Skills = lazy(() => import("./Skills"));
 
 export class Background extends Component {
   render() {
     return (
       <div id='bg' className='bg'>
         <Details />
-        <Skills />
+        <Suspense fallback={<h1>Loading....</h1>}>
+          <Skills />
+        </Suspense>
       </div>
     );
   }

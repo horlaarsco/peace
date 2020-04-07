@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class Details extends Component {
   render() {
@@ -15,10 +16,13 @@ export class Details extends Component {
           <strong>I call it Conceptual Minimalism.</strong>
         </p>
         <div className='stuffs'>
-          <a className='view-project' href=''>
-            View Project
-          </a>
-          <a href='' className='download-resume'>
+          <Link className='view-project' to={"/projects"}>
+            View Projects
+          </Link>
+          <a
+            href='https://docs.google.com/document/d/1dSTUT40jnJyPefQhraUyB9M0YQHueaYc7MpVKVx9IZs/edit?usp=sharing'
+            className='download-resume'
+          >
             Download Resume
           </a>
         </div>
