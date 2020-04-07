@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import LazyLoad from "react-lazy-load";
-
 export class Skills extends Component {
   render() {
     return (
@@ -11,9 +9,6 @@ export class Skills extends Component {
           <p className='texts pos-abs ux'>UX Research</p>
         </div>
         <div className='pos-abs peach'>
-          <LazyLoad>
-            <img className='pos-rel' src='./Bitmap-2.png' alt='' />
-          </LazyLoad>
           <img className='pos-rel' src='./Bitmap-2.png' alt='' />
           <p className='texts pos-abs'>Wireframing and Prototyping</p>
         </div>

@@ -1,13 +1,20 @@
 const projects = [
   {
-    key: "olffa",
+    key: "port",
     name: "My Portfolio",
     pictures: ["1.png", "anan/2.png"]
   },
   {
     key: "anan",
     name: "ANAN ERP Solution",
-    pictures: ["/anan/1.png", "anan/2.png", "anan/3.png", "anan/3.png"]
+    link:
+      "https://www.notion.so/ANAN-Departmental-ERP-Solution-dd70d04a983149d3af08645c5f7317e2",
+    pictures: [
+      "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586295994/Peace/anan/2.png",
+      "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586295994/Peace/anan/1.png",
+      "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586295994/Peace/anan/3.png",
+      "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586295994/Peace/anan/4.png"
+    ]
   },
   {
     key: "ss",
