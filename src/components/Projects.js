@@ -23,7 +23,7 @@ const H5 = styled.h6`
   cursor: pointer;
 `;
 
-const DETAILS = styled.p`
+const DETAILS = styled.a`
   opacity: 0.99;
   color: #505050;
   font-size: 12px;
@@ -63,6 +63,7 @@ function Projects() {
   }
 
   function setCurrentProjectm(currentImages, currentProject) {
+    setlistimages([]);
     setlistimages(currentImages);
     setActiveProject(currentProject);
     msetVisibility(false);
@@ -82,7 +83,7 @@ function Projects() {
       <H5 onClick={() => setCurrentProject(item.pictures, item.key)}>
         {item.name}
       </H5>
-      <DETAILS style={{ margin: "6px 0 0 0" }}>
+      <DETAILS href={item.link} style={{ margin: "6px 0 0 0" }}>
         View More Details
         <img src='./left-arrow.svg' style={{ marginLeft: ".3rem" }} alt='' />
       </DETAILS>
@@ -99,7 +100,7 @@ function Projects() {
       <H5 onClick={() => setCurrentProjectm(item.pictures, item.key)}>
         {item.name}
       </H5>
-      <DETAILS style={{ margin: "6px 0 0 0" }}>
+      <DETAILS href={item.link} style={{ margin: "6px 0 0 0" }}>
         View More Details
         <img src='./left-arrow.svg' style={{ marginLeft: ".3rem" }} alt='' />
       </DETAILS>
