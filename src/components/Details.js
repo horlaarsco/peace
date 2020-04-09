@@ -11,8 +11,8 @@ export class Details extends Component {
         </h6>
         <p>
           I believe design psychology and extensive/detailed research can be
-          used to create stunning interfaces that user can easily interact with
-          user no matter the Design Techniclaity.{" "}
+          used to create stunning interfaces that users can easily interact with
+          no matter the Design Technicality.
           <strong>I call it Conceptual Minimalism.</strong>
         </p>
         <div className='stuffs'>

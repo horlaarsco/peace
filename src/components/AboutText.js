@@ -12,8 +12,8 @@ export class AboutText extends Component {
         </h6>
         <p>
           Hi My name is Adenekan Peace, I am a lover of pure human design
-          Derived from critical research and detailed implementation of compiled
-          result. With a hot cup of coffee every morning and a chilled pet
+          derived from critical research and detailed implementation of compiled
+          results. With a hot cup of coffee every morning and a chilled pet
           bottle of soda by noon, I tackle my daily design challenges hoping one
           day the experience being implemented in my designs can change the
           world. Yeah, I almost forgot my pack of Maryland cookies and the

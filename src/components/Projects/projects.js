@@ -2,6 +2,8 @@ const projects = [
   {
     key: "port",
     name: "My Portfolio",
+    link:
+      "https://www.notion.so/My-Personal-Portfolio-dfbda40dd82d40498116ef6fe07cebc6",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297232/Peace/my%20portfolio/Clay_White_Copy_11.png"
     ]
@@ -10,7 +12,7 @@ const projects = [
     key: "anan",
     name: "ANAN ERP Solution",
     link:
-      "https://www.notion.so/ANAN-Departmental-ERP-Solution-dd70d04a983149d3af08645c5f7317e2",
+      "https://www.notion.so/ANAN-Departmental-ERP-Solution-ea021ce4187e40a695b3a45d3fa72bc1",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586295994/Peace/anan/2.png",
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586296019/Peace/anan/1.png",
@@ -22,7 +24,7 @@ const projects = [
     key: "genesis",
     name: "Go genesis app",
     link:
-      "https://www.notion.so/Go-Genesis-App-e6e0ec57355c4fe3a65d207c09fbd4d4",
+      "https://www.notion.so/Go-Genesis-App-4f0b9313cbf6497589f81a21b6c9417b",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586296815/Peace/genesis/Clay_White.png",
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586296944/Peace/genesis/Clay_White_Copy_2.png",
@@ -36,7 +38,7 @@ const projects = [
     key: "lumos",
     name: "Lumos Incomeverification Dashboard",
     link:
-      "https://www.notion.so/Lumos-Income-Verification-Dashboard-857f9ab288f5400db24702acd1576629",
+      "https://www.notion.so/Lumos-Income-verification-Dashboard-d52b1540938448a7a16bbe1f287179fc",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297227/Peace/Lumos%20Dashboard/Clay_White_Copy.png",
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297226/Peace/Lumos%20Dashboard/Clay_White_Copy_20.png",
@@ -47,7 +49,7 @@ const projects = [
     key: "dreefty",
     name: "Dreefty",
     link:
-      "https://www.notion.so/Dreefty-Logistics-d64f9dcd4405408b8842e60f50a9be37",
+      "https://www.notion.so/Dreefty-Logistics-97e588cba30a4375a4e20847a5156e5f",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586296756/Peace/dreefty/1.gif"
     ]
@@ -57,7 +59,7 @@ const projects = [
     key: "nsia",
     name: "NSIA Recruitment Portal",
     link:
-      "https://www.notion.so/NSIA-Recruitment-Portal-4239edbeca894aa297b806967247552b",
+      "https://www.notion.so/NSIA-Recruitment-Portal-7defe49473f24f22aae77ca28cde87be",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297269/Peace/NSIA%20Recruitment%20Portal/Clay_White_Copy_3.png",
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586298709/Peace/NSIA%20Recruitment%20Portal/Clay_White_Copy_4.png",
@@ -69,14 +71,14 @@ const projects = [
     key: "busha",
     name: "Re-design Busha Landing Page",
     link:
-      "https://www.notion.so/Busha-Landing-Page-f9a7361df97c4300bf55a7930b55000d",
+      "https://www.notion.so/Busha-Landing-page-Redesign-4d26d22a7be94d62b97338960a4bb9b1",
     pictures: ["bush/1.png", "bush/2.png"]
   },
   {
     key: "procure",
     name: "Procure ease",
     link:
-      "https://www.notion.so/Procureease-ERP-Landing-Page-837e4c7a237a4b5792ae406bf74a431a      ",
+      "https://www.notion.so/Procure-ease-landing-Page-e14c0ae6d60f4c04a30f4ecf12fe8ca4",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297290/Peace/procureease%20ERP%20Landing%20Page/Clay_White_Copy_13.png",
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297669/Peace/procureease%20ERP%20Landing%20Page/Procure-ease.png"
@@ -87,7 +89,7 @@ const projects = [
     key: "kliqrl",
     name: "Kliqr landing page",
     link:
-      "https://www.notion.so/Kliqr-Webpage-8b451ca6f17e4d708a7feaa1512c96ae      ",
+      "https://www.notion.so/Kliqr-Website-1694e991ef62466e93da6da606466dd3",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297062/Peace/Kliqr%20Landing/Clay_White.png",
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586299063/Peace/Kliqr%20Landing/KLIQR_LANDING_PAGE.png"
@@ -98,7 +100,7 @@ const projects = [
     key: "categorizer",
     name: "Kliqr Categorizer",
     link:
-      "https://www.notion.so/Kliqr-Categorizers-107bdaaa8b2746588350dcd76e0b3766      ",
+      "https://www.notion.so/Kliqr-Categorizer-Dashboard-0b70fa7af49a42a185d23f7baf6e98b0",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586296939/Peace/kliqr/Clay_White_Copy_17.png",
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297017/Peace/kliqr/Clay_White_Copy_19.png",
@@ -110,7 +112,7 @@ const projects = [
     key: "mobile",
     name: "Kliqr mobile app",
     link:
-      "https://www.notion.so/Kliqr-PFM-App-e5b72869e58b499592585a9f37294a5a",
+      "https://www.notion.so/Kliqr-PFM-App-f3846d7b4cda49918362046a0b0cdcfd",
     pictures: [
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297016/Peace/Kliqr%20Mobile%20App/Clay_White.png",
       "https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586297057/Peace/Kliqr%20Mobile%20App/Clay_White_Copy_11.png",
