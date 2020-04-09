@@ -13,7 +13,11 @@ export class Peace extends Component {
           alignItems: "flex-end"
         }}
       >
-        <img id='peace' src='./peace.svg' alt='' />
+        <img
+          id='peace'
+          src='https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586308638/Peace/peace.svg'
+          alt=''
+        />
       </div>
     );
   }

@@ -40,7 +40,11 @@ export class Contact extends Component {
           </div>
         </div>
         <div className='half2 contacts'>
-          <img className='contact' src='./contaccct.svg' alt='' />
+          <img
+            className='contact'
+            src='https://res.cloudinary.com/horlaarsco/image/upload/q_auto:eco/v1586460513/Peace/contaccct.svg'
+            alt=''
+          />
         </div>
       </div>
     );

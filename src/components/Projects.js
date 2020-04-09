@@ -83,7 +83,7 @@ function Projects() {
       <H5 onClick={() => setCurrentProject(item.pictures, item.key)}>
         {item.name}
       </H5>
-      <DETAILS href={item.link} style={{ margin: "6px 0 0 0" }}>
+      <DETAILS href={item.link} target='_blank' style={{ margin: "6px 0 0 0" }}>
         View More Details
         <img src='./left-arrow.svg' style={{ marginLeft: ".3rem" }} alt='' />
       </DETAILS>
